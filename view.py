@@ -11,4 +11,4 @@ i = pygame.midi.Input(input_id)
 while(True):
     if i.poll():
         midi_events = i.read(20)
-        print(midi_events)
+        print(midi_events[0][0][1])
