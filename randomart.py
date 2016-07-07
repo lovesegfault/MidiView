@@ -95,7 +95,7 @@ def plotColor(redExp, greenExp, blueExp, pixelsPerUnit=150):
 
 def makeImage(numPics=20):
     i = 0
-    with mido.open_input('USB Oxygen 8 v2 MIDI 1') as inport:
+    with mido.open_input('EWI-USB MIDI 1') as inport:
         with open("eqns.txt", 'w') as eqnsFile:
             for msg in inport:
                 print("Building exprs")
